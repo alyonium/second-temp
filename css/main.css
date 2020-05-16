@@ -325,7 +325,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .slide3__header {
@@ -456,6 +456,10 @@ body {
         text-align: center;
     }
 
+    .slide2__text__header{
+        font-size: 30px;
+    }
+
     .slide2__images {
         margin-top: 30px;
         position: static;
@@ -482,6 +486,18 @@ body {
         margin-bottom: 30px;
     }
 
+    .slide3__text-1, .slide3__text-2, .slide3__text-3{
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 1180px){
+    .slide3-wrapper{
+        flex-wrap: wrap;
+        max-width: 1000px;
+    }
+
     .slide3__images-1{
         order: 1;
     }
@@ -506,10 +522,24 @@ body {
         order: 6;
     }
 
-    .slide3__text-1, .slide3__text-2, .slide3__text-3{
-        box-shadow: none;
+    .slide3__images-1, .slide3__images-2, .slide3__images-3{
+        height: 350px;
+        width: 100%;
+        max-width: 350px;
     }
 
+    .slide3__text-3:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        left: -197px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        transform: rotate(-90deg);
+    }
 }
 
 @media (max-width: 992px) {
@@ -548,6 +578,74 @@ body {
     .slide2-background {
         left: 0;
         width: 1000px;
+    }
+
+    .slide3-wrapper{
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+    .slide3__images-1{
+        order: 1;
+    }
+
+    .slide3__images-2{
+        order: 3;
+    }
+
+    .slide3__images-3{
+        order: 5;
+    }
+
+    .slide3__text-1{
+        order: 2;
+    }
+
+    .slide3__text-2{
+        order: 6;
+    }
+
+    .slide3__text-3{
+        order: 4;
+    }
+
+    .slide3__text-1:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 0;
+        top: -93px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        transform: rotate(0deg);
+    }
+
+    .slide3__text-2:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 0;
+        top: -93px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        transform: rotate(0deg);
+    }
+
+    .slide3__text-3:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 0;
+        top: -93px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        transform: rotate(0deg);
     }
 }
 
