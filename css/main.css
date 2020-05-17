@@ -433,6 +433,82 @@ body {
     color: #212121;
 }
 
+.slide4{
+    background-image: url('../img/slide4-background.jpg');
+    background-size: cover;
+    height: 50vh;
+}
+
+.slide4-wrapper{
+
+}
+
+.slide4__text{
+    max-width: 710px;
+}
+
+.slide4__text__header{
+    font-size: 20px;
+    max-width: 220px;
+}
+
+
+
+.slide4__text__p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #949494;
+}
+
+.slide4-forms{
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 1px 1px 1px 25px;
+    background-color: #fff;
+    max-width: 860px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.slide4-form_view{
+    border: none;
+    width: 300px;
+    margin: 18px 0;
+    font-size: 16px;
+    color: #949494;
+    letter-spacing: 0.05em;
+}
+
+.slide4-phone{
+    margin-left: 20px;
+    position: relative;
+}
+
+.slide4__button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #36aeea;
+    background-color: #36aeea;
+    height: 55px;
+    width: 225px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    position: absolute;
+    right: 1px;
+}
+
+.slide4-phone:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 500px;
+    background-color: #fff;
+    bottom: 0;
+}
 
 @media (max-width: 1440px) {
     .slide1-wrapper {
