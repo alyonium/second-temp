@@ -558,6 +558,7 @@ body {
     width: 50px;
     height: 2px;
     top: 10px;
+    right: 50px;
     background-color: red;
 }
 
