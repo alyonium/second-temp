@@ -494,7 +494,7 @@ body {
     right: 2px;
 }
 
-.slide4-phone_before:before{
+.slide4__label:before{
     content: "";
     position: absolute;
     display: block;
@@ -534,9 +534,10 @@ body {
     height: 100%;
     flex-wrap: nowrap;
     width: 100%;
+    padding-bottom: 115px;
 }
 
-.slide5__text__header{
+.slide5__header{
     font-size: 30px;
     text-align: center;
     letter-spacing: 0.2em; /*delete this for adapt¸*/
@@ -551,15 +552,21 @@ body {
     position: relative;
 }
 
-.slide5-numbers_before:before{
+.slide5-img{
+    position: relative;
+    z-index: 3;
+}
+
+.slide5-img:before{
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
-    height: 2px;
-    top: 10px;
-    right: 50px;
-    background-color: red;
+    width: 2px;
+    height: 70px;
+    top: 48px;
+    left: 24px;
+    z-index: 2;
+    background-color: #f0f3f6;
 }
 
 .slide5-number{
@@ -571,6 +578,43 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    position: relative;
+}
+
+.slide5-pictures:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 78%;
+    height: 2px;
+    top: -94px;
+    z-index: 1;
+    background-color: #f0f3f6;
+}
+
+.slide5-picture__img{
+
+}
+
+.slide5__text{
+    display: flex;
+    flex-direction: column;
+    max-width: 179px;
+}
+
+.slide5__text__header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.slide5__text__p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 1440px) {
@@ -651,6 +695,9 @@ body {
         margin: 0;
     }
 
+    .slide5__header{
+        letter-spacing: 0;
+    }
 }
 
 @media (max-width: 1180px){
@@ -733,8 +780,34 @@ body {
         margin: 25px 0;
     }
 
-    .slide4-phone_before{
+    .slide4__label{
         display: none;
+    }
+
+    .slide5-img:before{
+        display: none;
+    }
+
+    .slide5-pictures:before{
+        display: none;
+    }
+
+    .slide5-numbers{
+        display: none;
+    }
+
+    .slide5-pictures{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide5-picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 340px;
     }
 }
 
@@ -827,6 +900,11 @@ body {
 
     .slide4__text{
         max-width: 320px;
+    }
+
+    .slide5-picture{
+        width: 280px;
+        margin-bottom: 30px;
     }
 }
 
