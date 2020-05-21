@@ -522,17 +522,54 @@ body {
 }
 
 .slide5{
-
+    display: flex;
+    align-items: center;
 }
 
 .slide5-wrapper{
-
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .slide5__text__header{
     font-size: 30px;
     text-align: center;
-    letter-spacing: 0.2em; /*Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ ÑÑ‚Ð¾ Ð½Ð° Ð°Ð´Ð°Ð¿Ñ‚Ð°Ñ†Ð¸Ð¸*/
+    letter-spacing: 0.2em; /*delete this for adapt¸*/
+}
+
+.slide5-numbers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.slide5-numbers_before:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    top: 10px;
+    background-color: red;
+}
+
+.slide5-number{
+    object-fit: cover;
+    position: relative;
+}
+
+.slide5-pictures{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 @media (max-width: 1440px) {
