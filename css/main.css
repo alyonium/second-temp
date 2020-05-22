@@ -648,7 +648,7 @@ body {
     object-fit: cover;
     z-index: 15;
     position: relative;
-    transition: 1s;
+    transition: 0.3s;
     filter: blur(2px);
 }
 
@@ -657,7 +657,7 @@ body {
     cursor: pointer;
     transform: scale(1.5);
     z-index: 25;
-    transition: 2s;
+    transition: 0.75s;
 }
 
 .slide6-stars{
@@ -666,26 +666,44 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .slide6-pic:hover .slide6-stars{
-    transition: 2s;
     opacity: 1;
 }
 
 .slide6-price{
     object-fit: contain;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
     opacity: 0;
-    transition: 1s;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
 .slide6-pic:hover .slide6-price{
-    transition: 2s;
     opacity: 1;
+}
+
+.slide6-price-last{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.slide6-price-now{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0;
 }
 
 .slide6__text{
@@ -695,12 +713,12 @@ body {
     max-width: 165px;
     color: #fff;
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .slide6-pic:hover .slide6__text{
     opacity: 1;
-    transition: 2s;
+    transition: 0.75s;
 }
 
 .slide6__text__header{
