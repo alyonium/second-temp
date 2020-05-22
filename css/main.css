@@ -540,7 +540,6 @@ body {
 .slide5__header{
     font-size: 30px;
     text-align: center;
-    letter-spacing: 0.2em; /*delete this for adapt¸*/
 }
 
 .slide5-numbers{
@@ -615,6 +614,106 @@ body {
     font-size: 14px;
     text-align: center;
     margin: 0;
+}
+
+.slide6{
+    position: relative;
+}
+
+.slide6-background {
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+}
+
+.slide6-wrapper{
+
+}
+
+.slide6__header{
+    text-align: center;
+    font-size: 30px;
+}
+
+.slide6-pictures{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    z-index: 15;
+}
+
+.slide6-pic{
+    object-fit: cover;
+    z-index: 15;
+    position: relative;
+    transition: 1s;
+    filter: blur(2px);
+}
+
+.slide6-pic:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 25;
+    transition: 2s;
+}
+
+.slide6-stars{
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide6-pic:hover .slide6-stars{
+    transition: 2s;
+    opacity: 1;
+}
+
+.slide6-price{
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide6-pic:hover .slide6-price{
+    transition: 2s;
+    opacity: 1;
+}
+
+.slide6__text{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    max-width: 165px;
+    color: #fff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide6-pic:hover .slide6__text{
+    opacity: 1;
+    transition: 2s;
+}
+
+.slide6__text__header{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0;
+}
+
+.slide6__text__p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 @media (max-width: 1440px) {
@@ -695,9 +794,6 @@ body {
         margin: 0;
     }
 
-    .slide5__header{
-        letter-spacing: 0;
-    }
 }
 
 @media (max-width: 1180px){
