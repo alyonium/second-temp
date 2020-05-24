@@ -63,6 +63,7 @@ body {
     outline: none;
     letter-spacing: 0.04em;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .slide__button:hover {
@@ -950,7 +951,7 @@ body {
 .footer{
     z-index: 25;
     position: relative;
-    box-shadow: 0px -3px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 -3px 23px 0 rgba(0,0,0,0.75);
     background: rgb(60,82,90);
     background: linear-gradient(90deg, rgba(60,82,90,1) 0%, rgba(62,95,105,1) 50%, rgba(63,101,109,1) 100%);
 }
@@ -1485,6 +1486,17 @@ body {
 
     .slide4__text__header{
         font-size: 25px;
+    }
+
+    .slide4__label:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 254px;
+        height: 2px;
+        background-color: #ebebeb;
+        bottom: 135px;
+        left: 25px;
     }
 
     .slide5-wrapper{
