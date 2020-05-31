@@ -155,6 +155,10 @@ body {
     width: 530px;
 }
 
+.header__nav__close{
+    display: none;
+}
+
 .header__nav__a {
     text-decoration: none;
     text-transform: uppercase;
@@ -462,7 +466,7 @@ body {
 .slide4-forms{
     display: flex;
     margin: 40px 0 20px;
-    padding: 2px 2px 2px 25px;
+    padding: 2px;
     background-color: #fff;
     max-width: 810px;
     border-radius: 3px;
@@ -477,9 +481,8 @@ body {
     letter-spacing: 0.05em;
     outline: none;
 }
-
-.slide4-phone{
-    margin-left: 25px;
+.slide4-name, .slide4-phone{
+    padding-left: 25px;
 }
 
 .slide4__button{
@@ -1110,7 +1113,7 @@ body {
     .slide3__images-1, .slide3__images-2, .slide3__images-3{
         height: 350px;
         width: 100%;
-        max-width: 350px;
+        max-width: 333px;
     }
 
     .slide3__text-3:before{
@@ -1241,11 +1244,56 @@ body {
 @media (max-width: 992px) {
 
     .header__nav {
+        position: fixed;
+        flex-direction: column;
+        left: -30vw;
+        top: 0;
+        height: 100vh;
+        width: 30vw;
+        background-color: #1992cf;
+        justify-content: center;
+        margin-left: 0;
+        z-index: 15;
+        transition: 1s;
+    }
+
+    .header__nav.active{
+        left: 0;
+    }
+
+    .header__nav__close{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .header__nav svg:hover{
+        cursor: pointer;
+    }
+
+    .header__nav svg:hover path{
+        fill: #1b52b7;
+    }
+
+    .header__nav__a{
+        margin: 15px 0;
+        color: #fff;
+    }
+
+    .header__nav__a:before{
         display: none;
+    }
+
+    .header__nav__a:hover{
+        color: #1b52b7;
     }
 
     .header__burger {
         display: block;
+        cursor: pointer;
     }
 
     .nav__button {
@@ -1265,7 +1313,11 @@ body {
     }
 
     .slide4-phone{
-        margin: 25px 0;
+        padding: 30px 0 20px;
+    }
+
+    .slide4-name {
+        padding: 25px 0;
     }
 
     .slide4__label:before{
@@ -1275,7 +1327,7 @@ body {
         width: 284px;
         height: 2px;
         background-color: #ebebeb;
-        bottom: 135px;
+        bottom: 145px;
         left: 25px;
     }
 
@@ -1454,6 +1506,11 @@ body {
         margin-bottom: 15px;
     }
 
+    .header__nav{
+        left: -100vw;
+        width: 100vw;
+    }
+
     .header__burger {
         position: absolute;
         right: 20px;
@@ -1481,7 +1538,15 @@ body {
     }
 
     .slide4-forms{
-        padding: 25px 10px;
+        padding: 25px 0;
+    }
+
+    .slide4-name{
+        padding: 20px 15px;
+    }
+
+    .slide4-phone{
+        padding: 30px 15px 20px;
     }
 
     .slide4__text__header{
@@ -1495,7 +1560,7 @@ body {
         width: 254px;
         height: 2px;
         background-color: #ebebeb;
-        bottom: 135px;
+        bottom: 146px;
         left: 25px;
     }
 

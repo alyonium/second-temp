@@ -16,6 +16,7 @@
             <div class="header__left-side">
                 <p class="header__logo"><span class="header__logo_color">Moun</span>tains</p>
                 <nav class="header__nav">
+                    <?xml version="1.0"?> <svg class="header__nav__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" viewBox="0 0 492 492" xml:space="preserve" width="150px" height="150px" ><g><g> <g> <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872    c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872    c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052    L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116    c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952    c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116    c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"  class="active-path"  fill="#FFFFFF"/> </g> </g></g> </svg>
                     <a href="#" class="header__nav__a"> Our story </a>
                     <a href="#" class="header__nav__a"> Services </a>
                     <a href="#" class="header__nav__a"> Work </a>
@@ -101,12 +102,12 @@
             <p class="slide4__text__p">Nam liber tempor cum soluta nobis eleifend option<br> congue nihi. Nam liber
                 tempor. Nam liber tempor cum soluta nobis eleifend option.</p>
         </div>
-        <div class="slide4-forms">
+        <form class="slide4-forms">
         <input class="slide4-form_view slide4-name"  type="text" placeholder="Your name:">
             <label class="slide4__label"></label>
-           <input class="slide4-form_view slide4-phone" type="text" placeholder="Your phone:">
-        <button class="slide__button slide4__button">Order now</button>
-    </div>
+           <input class="slide4-form_view slide4-phone" type="tel" placeholder="Your phone:">
+            <button class="slide__button slide4__button">Order now</button>
+    </form>
         <div class="slide4-lock">
             <svg class="slide4__locker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="16px"> <path fill-rule="evenodd"  fill="rgb(54, 174, 234)" d="M13.000,5.998 L11.000,5.998 L11.000,3.999 C11.000,1.789 9.209,-0.001 7.000,-0.001 C4.791,-0.001 3.000,1.789 3.000,3.999 L3.000,5.998 L1.000,5.998 C0.447,5.998 -0.000,6.446 -0.000,6.999 L-0.000,14.999 C-0.000,15.551 0.447,15.999 1.000,15.999 L13.000,15.999 C13.552,15.999 14.000,15.551 14.000,14.999 L14.000,6.999 C14.000,6.446 13.552,5.998 13.000,5.998 ZM7.000,11.998 C6.447,11.998 6.000,11.552 6.000,10.999 C6.000,10.446 6.447,9.999 7.000,9.999 C7.552,9.999 8.000,10.446 8.000,10.999 C8.000,11.552 7.552,11.998 7.000,11.998 ZM9.000,5.998 L5.000,5.998 L5.000,3.999 C5.000,2.895 5.894,1.998 7.000,1.998 C8.103,1.998 9.000,2.895 9.000,3.999 L9.000,5.998 Z"/> </svg>
             <p class="slide4-lock__text">* Your data will not be transferred</p>
@@ -273,17 +274,16 @@
                 </div>
             </div>
         </div>
-        <div class="slide9-forms">
+        <form class="slide9-forms">
             <div class="slide9-forms-text">
                 <p class="slide9-forms-header">Contacts</p>
                 <p class="slide9-forms-description">Sign up for our newsletter to receive updates</p>
             </div>
-
             <input class="slide9-form_view slide9-name"  type="text" placeholder="Name">
-            <input class="slide9-form_view slide9-phone" type="text" placeholder="Phone">
+            <input class="slide9-form_view slide9-phone" type="tel"  placeholder="Phone">
             <input class="slide9-form_view slide9-email" type="text" placeholder="E-mail">
             <button class="slide__button slide9__button">Send</button>
-        </div>
+        </form>
     </div>
 </div>
 <footer class="slide footer">
@@ -298,5 +298,6 @@
     </div>
 </footer>
 </body>
-
+<script src="scripts/jquery.js"></script>
+<script src="scripts/script.js"></script>
 </html>
